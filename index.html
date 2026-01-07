@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div data-aos="fade-up">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Exequiel Jayter Co</span></h1>
+                    <h2>Web Developer & Designer</h2>
+                    <p>I create beautiful, responsive websites that deliver exceptional user experiences.</p>
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Images/me.jpg" alt="Exequiel Jayter R.">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm a passionate web developer with expertise in creating modern and responsive websites. I love turning ideas into reality through code.</p>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Blender</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project1.jpg" alt="Younique Project">
+                </div>
+                <h3>Younique</h3>
+                <p>Younique is a web-based capstone project designed to help 
+                    customers create personalized crochet products through an 
+                    easy-to-use online platform. It features a 3D customization 
+                    tool where users can choose colors, patterns, and sizes, allowing 
+                    them to visualize their custom crochet before ordering.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Project</a>
+                    <a href="https://youniquecrochet.io" target="_blank" class="project-link">Link</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project2.jpg" alt="BCF Infotainment System">
+                </div>
+                <h3>BCF Infotainment System</h3>
+                <p>The BCF Infotainment System is a digital information platform 
+                    designed to centralize and display important announcements, 
+                    updates, and multimedia content in an organized and engaging way.
+                     It serves as an easy-to-manage system where administrators
+                      can publish information such as news, schedules, events, 
+                      and visual media, while users can quickly access relevant 
+                      and up-to-date content.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Project</a>
+                    <a href="#" target="_blank" class="project-link" >Link</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/BlenderModel.png" alt="Blender Models">
+                </div>
+                <h3>Blender 3D Modeling</h3>
+                <p>Blender 3D is a free and open-source 3D modeling, rendering, and animation software.
+                     It is used for creating 3D models, animations, and visual effects.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Project</a>
+                    <a href="#" target="_blank" class="project-link" >Link</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/exequiel.jayter.co" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
