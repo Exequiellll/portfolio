@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Add this in your <head> section -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
@@ -102,11 +104,19 @@
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="assets/BlenderModel.png" alt="Blender Models">
+                    <model-viewer 
+                        src="bear.glb" 
+                        alt="Blender Models"
+                        auto-rotate
+                        camera-controls
+                        style="width: 100%; height: 100%;">
+                    </model-viewer>
                 </div>
                 <h3>Blender 3D Modeling</h3>
-                <p>Blender 3D is a free and open-source 3D modeling, rendering, and animation software.
-                     It is used for creating 3D models, animations, and visual effects.</p>
+                <p>
+                    Using Blender, I am capable of creating 3D models for visualization,
+                     basic texturing, and simple customization.
+                </p>
                 <div class="project-links">
                     <a href="#" class="project-link">View Project</a>
                     <a href="#" target="_blank" class="project-link" >Link</a>
