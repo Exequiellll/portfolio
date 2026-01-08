@@ -409,7 +409,7 @@ nav {
 }
 
 .project-card {
-    background: white;
+    background: whitesmoke;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
