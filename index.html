@@ -10,18 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">My Portfolio</div>
+            <a href="index.html" class="logo">My Portfolio</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#home" class="active">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blender.html">3D Art</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -79,7 +81,8 @@
                     customers create personalized crochet products through an 
                     easy-to-use online platform. It features a 3D customization 
                     tool where users can choose colors, patterns, and sizes, allowing 
-                    them to visualize their custom crochet before ordering.</p>
+                    them to visualize their custom crochet before ordering.
+                </p>
                 <div class="project-links">
                     <a href="#" class="project-link">View Project</a>
                     <a href="https://youniquecrochet.io" target="_blank" class="project-link">Link</a>
@@ -118,7 +121,7 @@
                      basic texturing, and simple customization.
                 </p>
                 <div class="project-links">
-                    <a href="#" class="project-link">View Project</a>
+                    <a href="blender.html" class="project-link">View Project</a>
                     <a href="#" target="_blank" class="project-link" >Link</a>
                 </div>
             </div>
@@ -149,5 +152,43 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            navLinks.forEach(link => {
+                // Remove active class from all links first
+                link.classList.remove('active');
+                
+                // Check if this link's href matches the current page
+                const linkHref = link.getAttribute('href');
+                if ((currentPage === 'index.html' && (linkHref === 'index.html' || linkHref === '#home')) ||
+                    (currentPage === 'blender.html' && linkHref === 'blender.html') ||
+                    (currentPage === '' && (linkHref === 'index.html' || linkHref === '#home'))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
