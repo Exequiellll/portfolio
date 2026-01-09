@@ -3,7 +3,8 @@
 <head>
     <!-- Add this in your <head> section -->
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-    <meta charset="UTF-8">
+
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +44,7 @@
                     <a href="#contact" class="cta-button">Get In Touch</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div  data-aos="slide-left"class="hero-image">
                 <img src="Images/me.jpg" alt="Exequiel Jayter R.">
             </div>
         </div>
@@ -51,18 +52,18 @@
 
     <section id="about" class="about">
         <h2>About Me</h2>
-        <div class="about-content">
+        <div  data-aos="fade-up" class="about-content">
             <div class="about-text">
                 <p>Hello! I'm a passionate web developer with expertise in creating modern and responsive websites. I love turning ideas into reality through code.</p>
                 <div class="skills">
                     <h3>My Skills</h3>
                     <div class="skills-container">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Blender</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Laravel</span>
+                        <span  data-aos="fade-up" data-aos-duration="500"class="skill-tag">HTML5</span>
+                        <span  data-aos="fade-up" data-aos-duration="700"class="skill-tag">CSS3</span>
+                        <span  data-aos="fade-up" data-aos-duration="1000"class="skill-tag">JavaScript</span>
+                        <span  data-aos="fade-up" data-aos-duration="1300"class="skill-tag">Blender</span>
+                        <span  data-aos="fade-up" data-aos-duration="1500"class="skill-tag">PHP</span>
+                        <span  data-aos="fade-up" data-aos-duration="1700"class="skill-tag">Laravel</span>
                     </div>
                 </div>
             </div>
@@ -73,7 +74,7 @@
         <h2>My Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image">
+                <div data-aos="fade-up" class="project-image">
                     <img src="assets/project1.jpg" alt="Younique Project">
                 </div>
                 <h3>Younique</h3>
@@ -89,7 +90,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">
+                <div data-aos="fade-up" class="project-image">
                     <img src="assets/project2.jpg" alt="BCF Infotainment System">
                 </div>
                 <h3>BCF Infotainment System</h3>
@@ -105,7 +106,7 @@
                     <a href="#" target="_blank" class="project-link" >Link</a>
                 </div>
             </div>
-            <div class="project-card">
+            <div data-aos="fade-up" class="project-card">
                 <div class="project-image">
                     <model-viewer 
                         src="bear.glb" 
